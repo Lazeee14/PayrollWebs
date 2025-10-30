@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISPLAY</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <h1>PAYSLIP RESULT</h1>
+
+  <div class="payslip-box" id="payslip"></div>
+
+  <button onclick="window.location.href='index.html'">BACK</button>
+
+  <script>
+    const payroll = JSON.parse(localStorage.getItem("payrollData"));
+
+    if (payroll) {
+    document.getElementById("payslip").innerHTML = `
+      <p><b>ID NUMBER:</b> ${payroll.idnum}</p>
+      <p><b>LAST NAME:</b> ${payroll.lname}</p>
+      <p><b>FIRST NAME:</b> ${payroll.fname}</p>
+      <p><b>MIDDLE NAME:</b> ${payroll.mname}</p>
+      <p><b>POSITION:</b> ${payroll.position}</p>
+      <hr>
+      <p><b>RATE:</b> ₱${payroll.rate.toFixed(2)}</p>
+      <p><b>WORK DAYS:</b> ${payroll.days}</p>
+      <p><b>GROSS PAY:</b> ₱${payroll.grossPay.toFixed(2)}</p>
+      <hr>
+      <p><b>SSS (5%):</b> ₱${payroll.sss.toFixed(2)}</p>
+      <p><b>PAG-IBIG (3%):</b> ₱${payroll.pagibig.toFixed(2)}</p>
+      <p><b>PHILHEALTH (2%):</b> ₱${payroll.philhealth.toFixed(2)}</p>
+      <p><b>TAX (5%):</b> ₱${payroll.tax.toFixed(2)}</p>
+      <p><b>TOTAL DEDUCTION:</b> ₱${payroll.totalDeduction.toFixed(2)}</p>
+      <hr>
+      <p><b>NET PAY:</b> ₱${payroll.netPay.toFixed(2)}</p>
+    `;
+  } else {
+      document.getElementById("payslip").innerHTML = "<p>No payroll data found.</p>";
+    }
+  </script>
+</body>
+</html>

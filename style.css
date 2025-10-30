@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8cff8c; 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title {
+  color: rgb(167, 226, 223);
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.payroll-box {
+  background-color: #78b1d6;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 8px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  background-color: lightgray;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 8px 20px;
+  margin: 30px auto 10px auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+}
+    body {
+      background-color: #23383f;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: rgb(0, 225, 255);
+      font-size: 48px;
+      margin-top: 40px;
+    }
+
+    .payslip-box {
+      background-color: #4dffb8;
+      border: 5px solid black;
+      border-radius: 25px;
+      width: 600px;
+      margin: 40px auto;
+      padding: 20px 40px;
+      text-align: left;
+      font-size: 22px;
+    }
+
+    .payslip-box p {
+      font-weight: bold;
+      border: 2px solid black;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    hr {
+      border: 2px solid black;
+    }
+
+    button {
+      display: block;
+      background-color: lightgray;
+      color: black;
+      font-weight: bold;
+      font-size: 28px;
+      border: 3px solid black;
+      border-radius: 10px;
+      padding: 8px 20px;
+      margin: 30px auto 10px auto;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d1d1d1;
+    }
